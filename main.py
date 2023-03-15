@@ -11,10 +11,10 @@ def operation (row, col):
 def print_operation_table (operation, num_rows=6, num_columns=6):
     print(f"{'':>5}", end="")
     for j in range (1, num_columns + 1):
-        print(f"{j:>5}", end="")
+        print(end="")
     print()
     for i in range(1, num_rows + 1):
-        print(f"{i:>5}", end="")
+        print(end="")
         for j in range(1, num_columns + 1):
             print(f"{operation(i, j):>5}", end="")
         print()
